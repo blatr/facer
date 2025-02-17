@@ -59,14 +59,14 @@ class FaRLFaceParser(FaceParser):
     ```
     """
 
-    def __init__(self, conf_name: Optional[str] = None, model_path: Optional[str] = None, device=None) -> None:
+    def __init__(self, conf_name: Optional[str] = None, model_path: Optional[str] = None, device=None, model_dir=None) -> None:
         super().__init__()
         if conf_name is None:
             conf_name = 'lapa/448'
         if model_path is None:
             model_path = pretrain_settings[conf_name]['url']
         self.conf_name = conf_name
-        self.net = download_jit(model_path, map_location=device)
+        self.net = download_jit(model_path, map_location=device, model_dir=model_dir)
         self.eval()
         self.device = device
         self.setting = pretrain_settings[conf_name]
