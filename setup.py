@@ -31,7 +31,7 @@ setup(
     version=get_version(),
     description="Face related toolkit",
     author="FacePerceiver",
-    url="https://github.com/FacePerceiver/facer",
+    url="https://github.com/blatr/facer",
     license="MIT",
     keywords="face-detection pytorch RetinaFace face-parsing farl face-alignment",
     project_urls={
