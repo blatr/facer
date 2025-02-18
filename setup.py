@@ -35,9 +35,9 @@ setup(
     license="MIT",
     keywords="face-detection pytorch RetinaFace face-parsing farl face-alignment",
     project_urls={
-        "Documentation": "https://github.com/FacePerceiver/facer",
-        "Source": "https://github.com/FacePerceiver/facer",
-        "Tracker": "https://github.com/FacePerceiver/facer/issues",
+        "Documentation": "https://github.com/blatr/facer",
+        "Source": "https://github.com/blatr/facer",
+        "Tracker": "https://github.com/blatr/facer/issues",
     },
     long_description=read_file("README.md"),
     long_description_content_type="text/markdown",
